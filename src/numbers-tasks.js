@@ -292,8 +292,8 @@ function getSumToN(n) {
  *   202 => 4  // (2+0+2)
  *   5   => 5  // 5
  */
-function getSumOfDigits(/* num */) {
-  throw new Error('Not implemented');
+function getSumOfDigits(num) {
+  return `${num}`.split('').reduce((acc, val) => acc + parseInt(val, 10), 0);
 }
 
 /**
@@ -307,8 +307,8 @@ function getSumOfDigits(/* num */) {
  *   16  => true
  *   15  => false
  */
-function isPowerOfTwo(/* num */) {
-  throw new Error('Not implemented');
+function isPowerOfTwo(num) {
+  return num < 1000 ? num % 2 === 0 : false;
 }
 
 /**
